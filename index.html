@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Pendragon Furniture - Quality wooden furniture and custom designs">
+  <title>Pendragon Furniture | Wooden Furniture</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon-128.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/invoice.css?v=2">
+  <meta name="theme-color" content="#ffffff" id="metaThemeColor">
+  <script>
+    (function(){var s=localStorage.getItem('pendragon_theme');var d=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',d);var m=document.getElementById('metaThemeColor');if(m)m.setAttribute('content',d==='dark'?'#120f0f':'#ffffff');})();
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">
+        <img src="images/logo-icon.png" alt="Pendragon Furniture Logo" class="logo-img">
+        <span class="logo-text" id="shopName">Pendragon Furniture</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="#workshop">Workshop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark and light mode" title="Switch theme">
+          <span class="theme-icon-wrap" aria-hidden="true">
+            <span class="theme-icon theme-icon-sun">☀️</span>
+            <span class="theme-icon theme-icon-moon">🌙</span>
+          </span>
+        </button>
+        <button type="button" class="cart-toggle-btn" id="cartToggleBtn" aria-label="Shopping Cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge" id="cartCountBadge" hidden>0</span>
+        </button>
+        <a href="admin.html" class="btn btn-outline nav-cta">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media" aria-hidden="true">
+        <video
+          class="hero-video"
+          id="heroVideo"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="assets/video/hero-woodwork.jpg"
+        >
+          <source src="assets/video/hero-woodwork.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="hero-badge hero-anim" style="--delay: 0s">Quality Wood Craftsmanship</p>
+        <h1 class="hero-anim" style="--delay: 0.12s">Beautiful Wooden Furniture<br><span class="gradient-text text-shine">For Your Home</span></h1>
+        <p class="hero-desc hero-anim" style="--delay: 0.24s">
+          We create quality wooden furniture and custom designs to bring warmth and elegance to your home.
+          Professional craftsmen with over 15 years of experience.
+        </p>
+        <div class="hero-actions hero-anim" style="--delay: 0.36s">
+          <a href="shop.html" class="btn btn-primary btn-lg btn-pulse">Visit Shop</a>
+          <a href="#contact" class="btn btn-outline btn-lg">Place an Order</a>
+        </div>
+        <div class="hero-stats hero-anim" style="--delay: 0.5s">
+          <div class="stat" style="--stat-delay: 0.55s">
+            <span class="stat-number" data-count="15" data-suffix="+">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat" style="--stat-delay: 0.7s">
+            <span class="stat-number" id="productCount" data-count="0" data-suffix="">0</span>
+            <span class="stat-label">Products</span>
+          </div>
+          <div class="stat" style="--stat-delay: 0.85s">
+            <span class="stat-number" data-count="500" data-suffix="+">0</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+        </div>
+      </div>
+      <a href="shop.html" class="scroll-cue hero-anim" style="--delay: 1s" aria-label="Go to shop">
+        <span class="scroll-cue-mouse"></span>
+        <span class="scroll-cue-text">Shop</span>
+      </a>
+    </section>
+
+    <section class="shop-preview section section-alt" id="shop-preview">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Shop</p>
+          <h2>Ready-Made Furniture</h2>
+          <p class="section-desc">Browse our full collection and place orders on the Shop page</p>
+        </div>
+        <div class="shop-preview-actions">
+          <a href="shop.html" class="btn btn-primary btn-lg">Open Shop</a>
+          <a href="shop.html#order" class="btn btn-outline btn-lg">Order Form</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="workshop section" id="workshop">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <p class="section-tag">Workshop</p>
+            <h2>Custom Wood Crafting</h2>
+            <p>
+              Our experienced craftsmen create custom designs based on your requirements.
+              Dining tables, beds, wardrobes, chairs, and much more.
+            </p>
+            <ul class="about-features">
+              <li><span class="check">✓</span> Custom designs to your specifications</li>
+              <li><span class="check">✓</span> Premium quality wood types</li>
+              <li><span class="check">✓</span> Fair and transparent pricing</li>
+              <li><span class="check">✓</span> Free measurements and consultation</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-lg" style="margin-top:1.5rem">Request Custom Order</a>
+          </div>
+          <div class="about-image">
+            <div class="about-card workshop-card">
+              <div class="about-card-inner">
+                <span class="about-year">🔨</span>
+                <p>Professional Craftsmen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <div class="about-card">
+            <div class="about-card-inner">
+              <span class="about-year">2010</span>
+              <p>Serving since</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="section-tag">About Us</p>
+          <h2>Trusted Wooden Furniture<br>Manufacturers</h2>
+          <p>
+            Pendragon Furniture is one of Sri Lanka's leading wooden furniture manufacturers.
+            We use teak, mahogany, pine, and other premium quality wood types.
+          </p>
+          <ul class="about-features">
+            <li><span class="check">✓</span> 100% natural wood</li>
+            <li><span class="check">✓</span> 2-year warranty</li>
+            <li><span class="check">✓</span> Free delivery (Colombo area)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="container cta-box">
+        <h2>Let's Build Your Dream Furniture</h2>
+        <p>Contact us today for a free consultation and measurement service.</p>
+        <a href="#contact" class="btn btn-white btn-lg">Contact Us Now</a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="section-tag">Contact</p>
+          <h2>Get In Touch</h2>
+          <p>Tell us about your requirements. We'll get back to you quickly.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p id="shopAddress">45, Furniture Lane, Moratuwa</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p id="shopPhone">+94 11 234 5678</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p><a href="https://wa.me/94772345678" target="_blank" rel="noopener noreferrer" id="shopWhatsAppLink" class="whatsapp-link"><span id="shopWhatsApp">+94 77 234 5678</span> <span class="whatsapp-chat-tag">Chat Now →</span></a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <p id="shopEmail">info@woodcraft.lk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+94 7X XXX XXXX">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your requirements..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">Send Message</button>
+          <p class="form-success" id="formSuccess" hidden>Thank you! We received your message and will contact you soon.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="images/logo-icon.png" alt="Pendragon Furniture Logo" class="logo-img">
+          <span class="logo-text">Pendragon Furniture</span>
+        </a>
+        <p>Quality wooden furniture and custom designs.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#workshop">Workshop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="shop.html?category=chairs">Chairs</a></li>
+          <li><a href="shop.html?category=tables">Tables</a></li>
+          <li><a href="shop.html?category=beds">Beds</a></li>
+          <li><a href="shop.html?category=cabinets">Cabinets</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Pendragon Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Slide-Out Drawer -->
+  <div class="cart-drawer" id="cartDrawer" hidden>
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <h3>✦ Your Shopping Cart</h3>
+          <span class="cart-header-count" id="cartHeaderCount">0 items</span>
+        </div>
+        <button type="button" class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+      </div>
+
+      <div class="cart-body" id="cartBody">
+        <div class="cart-empty" id="cartEmpty">
+          <div class="cart-empty-icon">🛋️</div>
+          <h4>Your cart is empty</h4>
+          <p>Explore our handcrafted collection and choose your favorite furniture designs.</p>
+          <a href="shop.html" class="btn btn-primary btn-sm" id="cartExploreBtn">Browse Furniture</a>
+        </div>
+        <div class="cart-items-list" id="cartItemsList"></div>
+      </div>
+
+      <div class="cart-footer" id="cartFooter">
+        <div class="cart-summary-card">
+          <div class="cart-summary-row">
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">Rs. 0</strong>
+          </div>
+          <div class="cart-summary-row note-row">
+            <span>Showroom Collection</span>
+            <span class="text-gold">Free at any branch</span>
+          </div>
+          <div class="cart-summary-divider"></div>
+          <div class="cart-summary-row total-row">
+            <span>Estimated Total</span>
+            <strong id="cartGrandTotal" class="text-gold">Rs. 0</strong>
+          </div>
+        </div>
+        <div class="cart-footer-actions">
+          <button type="button" class="btn btn-primary btn-lg btn-full" id="cartCheckoutBtn">
+            Proceed to Checkout
+          </button>
+          <button type="button" class="btn btn-whatsapp btn-lg btn-full" id="cartWhatsAppBtn">
+            <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.33 7.34 9 7.42 8.73 7.71C8.45 8.01 7.68 8.74 7.68 10.21C7.68 11.69 8.75 13.11 8.9 13.31C9.05 13.51 11.02 16.55 14.04 17.85C14.76 18.16 15.32 18.35 15.76 18.49C16.48 18.72 17.14 18.69 17.65 18.61C18.23 18.52 19.42 17.89 19.67 17.19C19.92 16.49 19.92 15.89 19.84 15.76C19.77 15.63 19.57 15.56 19.27 15.41C18.98 15.26 17.51 14.54 17.24 14.44C16.96 14.34 16.77 14.29 16.57 14.59C16.37 14.88 15.81 15.56 15.63 15.76C15.46 15.96 15.29 15.98 14.99 15.83C14.7 15.68 13.74 15.37 12.61 14.36C11.73 13.57 11.13 12.6 10.96 12.3C10.79 12.01 10.94 11.85 11.09 11.7C11.22 11.57 11.38 11.36 11.53 11.18C11.68 11.01 11.73 10.88 11.83 10.69C11.93 10.49 11.88 10.32 11.8 10.17C11.73 10.02 11.13 8.56 10.88 7.96C10.64 7.37 10.4 7.45 10.22 7.44C10.04 7.44 9.84 7.44 9.53 7.34Z"/>
+            </svg>
+            Order Cart via WhatsApp
+          </button>
+          <button type="button" class="btn btn-link btn-clear-cart" id="clearCartBtn">
+            Clear Entire Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Chat Widget -->
+  <a href="https://wa.me/94772345678?text=Hello%20Pendragon%20Furniture!%20I%20would%20like%20to%20inquire%20about%20your%20furniture." 
+     class="floating-whatsapp-btn" 
+     id="floatingWhatsAppBtn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat with us on WhatsApp">
+    <div class="whatsapp-btn-pulse"></div>
+    <svg class="floating-whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.33 7.34 9 7.42 8.73 7.71C8.45 8.01 7.68 8.74 7.68 10.21C7.68 11.69 8.75 13.11 8.9 13.31C9.05 13.51 11.02 16.55 14.04 17.85C14.76 18.16 15.32 18.35 15.76 18.49C16.48 18.72 17.14 18.69 17.65 18.61C18.23 18.52 19.42 17.89 19.67 17.19C19.92 16.49 19.92 15.89 19.84 15.76C19.77 15.63 19.57 15.56 19.27 15.41C18.98 15.26 17.51 14.54 17.24 14.44C16.96 14.34 16.77 14.29 16.57 14.59C16.37 14.88 15.81 15.56 15.63 15.76C15.46 15.96 15.29 15.98 14.99 15.83C14.7 15.68 13.74 15.37 12.61 14.36C11.73 13.57 11.13 12.6 10.96 12.3C10.79 12.01 10.94 11.85 11.09 11.7C11.22 11.57 11.38 11.36 11.53 11.18C11.68 11.01 11.73 10.88 11.83 10.69C11.93 10.49 11.88 10.32 11.8 10.17C11.73 10.02 11.13 8.56 10.88 7.96C10.64 7.37 10.4 7.45 10.22 7.44C10.04 7.44 9.84 7.44 9.53 7.34Z"/>
+    </svg>
+    <span class="floating-whatsapp-tooltip">Chat with us on WhatsApp</span>
+  </a>
+
+  <!-- Floating Quick Cart Button -->
+  <button type="button" class="floating-cart-btn" id="floatingCartBtn" aria-label="Shopping Cart">
+    <span class="floating-cart-icon">🛒</span>
+    <span class="floating-cart-badge" id="floatingCartBadge" hidden>0</span>
+  </button>
+
+  <!-- Firebase SDKs & Cloud Database Adapter -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/theme.js?v=2"></script>
+  <script src="js/html2pdf.bundle.min.js"></script>
+  <script src="js/invoice.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
