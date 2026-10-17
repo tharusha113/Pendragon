@@ -1,0 +1,793 @@
+/* =========================================================
+   PENDRAGON FURNITURE - LUXURY INVOICE & BILL STYLES
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+.pf-invoice-card {
+  width: 100%;
+  max-width: 790px;
+  margin: 0 auto;
+  background: #ffffff !important;
+  color: #1e293b !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 26px 30px;
+  box-sizing: border-box;
+  line-height: 1.45;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  background-image: radial-gradient(#faf5ea 1px, transparent 1px) !important;
+  background-size: 20px 20px !important;
+}
+
+/* Top Gold Accent Header Bar */
+.pf-inv-top-accent {
+  height: 5px;
+  background: linear-gradient(90deg, #83161c 0%, #c59b27 35%, #ffd700 50%, #c59b27 65%, #83161c 100%);
+  border-radius: 8px 8px 0 0;
+  margin: -26px -30px 20px -30px;
+}
+
+/* Header */
+.pf-inv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.pf-inv-brand {
+  flex: 1;
+}
+
+.pf-inv-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.pf-inv-logo-frame {
+  width: 62px;
+  height: 62px;
+  min-width: 62px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 2px solid #c59b27;
+  box-shadow: 0 3px 10px rgba(131, 22, 28, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  overflow: hidden;
+}
+
+.pf-inv-logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  display: block;
+}
+
+.pf-inv-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-inv-company-name {
+  font-family: 'Cinzel', 'Inter', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #83161c !important;
+  margin: 0;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pf-inv-company-sub {
+  font-size: 0.76rem;
+  color: #b48316;
+  font-weight: 700;
+  margin: 2px 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pf-inv-company-contact {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.45;
+  background: #fafaf9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border-left: 3px solid #c59b27;
+  display: inline-block;
+}
+
+.pf-inv-contact-item {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+/* Meta Column (Right) */
+.pf-inv-meta {
+  text-align: right;
+  min-width: 220px;
+}
+
+.pf-inv-badge-wrap {
+  display: inline-block;
+  background: linear-gradient(135deg, #83161c 0%, #5a0c11 100%);
+  color: #ffffff !important;
+  padding: 5px 14px;
+  border-radius: 6px;
+  border: 1px solid #c59b27;
+  box-shadow: 0 2px 8px rgba(131, 22, 28, 0.2);
+  margin-bottom: 8px;
+}
+
+.pf-inv-badge-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pf-inv-meta-card {
+  background: #fdfcfb;
+  border: 1px solid #e7e5e4;
+  border-radius: 6px;
+  padding: 8px 12px;
+  text-align: right;
+}
+
+.pf-inv-meta-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+  font-size: 0.82rem;
+}
+
+.pf-inv-meta-line:last-child {
+  margin-bottom: 0;
+}
+
+.pf-inv-meta-label {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+}
+
+.pf-inv-order-ref {
+  font-family: 'Cinzel', monospace;
+  font-size: 1.15rem;
+  color: #83161c !important;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.pf-inv-meta-val {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.pf-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pf-status-badge.status-pending { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.pf-status-badge.status-confirmed { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+.pf-status-badge.status-completed { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.pf-status-badge.status-cancelled { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+/* Divider Ribbon */
+.pf-inv-divider {
+  display: flex;
+  align-items: center;
+  margin: 12px 0 16px 0;
+  gap: 10px;
+}
+
+.pf-inv-divider-line {
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(90deg, #e2e8f0 0%, #c59b27 50%, #e2e8f0 100%);
+}
+
+.pf-inv-divider-crest {
+  color: #c59b27;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+/* 2-Column Info Grid */
+.pf-inv-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.pf-info-box {
+  background: #fdfcfb;
+  border: 1px solid #e7e5e4;
+  border-top: 3px solid #c59b27;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.pf-info-box-title {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #83161c;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pf-info-row {
+  font-size: 0.8rem;
+  color: #1e293b;
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.pf-info-row strong {
+  color: #475569;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 72px;
+}
+
+.pf-info-row.highlight-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.pf-delivery-notes-tag {
+  margin-top: 4px;
+  padding: 4px 8px;
+  background: #fffbeb;
+  border: 1px solid #fef3c7;
+  border-radius: 4px;
+  font-size: 0.76rem;
+  color: #92400e;
+}
+
+/* Items Table */
+.pf-table-wrapper {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.pf-invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  text-align: left;
+}
+
+.pf-invoice-table thead th {
+  background: #1e1e24;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 9px 12px;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid #c59b27;
+}
+
+.pf-invoice-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.pf-invoice-table tbody tr:nth-child(even) {
+  background: #fafaf9;
+}
+
+.pf-invoice-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pf-invoice-table td {
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+.pf-col-num { width: 36px; text-align: center; color: #64748b; font-weight: 700; }
+.pf-col-item { color: #0f172a; }
+.pf-col-price { width: 110px; text-align: right; font-weight: 600; color: #334155; }
+.pf-col-qty { width: 45px; text-align: center; font-weight: 800; color: #0f172a; }
+.pf-col-total { width: 125px; text-align: right; font-weight: 800; color: #83161c; }
+
+.pf-item-title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #0f172a;
+}
+
+.pf-item-design-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 3px;
+  font-size: 0.74rem;
+  color: #854d0e;
+  background: #fefce8;
+  border: 1px solid #fef08a;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Settlement Grid */
+.pf-settlement-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 16px;
+  margin-bottom: 18px;
+  align-items: stretch;
+}
+
+.pf-notes-panel {
+  background: #fcfbf9;
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pf-notes-panel h4 {
+  margin: 0 0 6px 0;
+  font-size: 0.82rem;
+  color: #83161c;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pf-notes-panel p {
+  margin: 0 0 5px 0;
+  font-size: 0.76rem;
+  color: #57534e;
+  line-height: 1.4;
+}
+
+.pf-notes-hotline {
+  background: #fefce8;
+  border: 1px solid #fef08a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  color: #854d0e;
+  margin-top: 4px;
+}
+
+.pf-totals-panel {
+  background: #fdfcfb;
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.pf-totals-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: #475569;
+}
+
+.pf-totals-row strong {
+  color: #0f172a;
+}
+
+.pf-free-tag {
+  color: #15803d;
+  font-weight: 800;
+}
+
+.pf-totals-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 4px 0;
+}
+
+.pf-grand-total-box {
+  background: linear-gradient(135deg, #83161c 0%, #580c10 100%);
+  color: #ffffff !important;
+  border: 1.5px solid #c59b27;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(131, 22, 28, 0.18);
+  margin-top: 2px;
+}
+
+.pf-grand-total-label {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fef08a !important;
+}
+
+.pf-grand-total-amount {
+  font-family: 'Cinzel', 'Inter', monospace;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff !important;
+  letter-spacing: 0.02em;
+}
+
+/* Footer Official Seal & Signature */
+.pf-inv-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px dashed #cbd5e1;
+  gap: 16px;
+}
+
+.pf-seal-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pf-royal-seal {
+  width: 74px;
+  height: 74px;
+  min-width: 74px;
+  border: 2px solid #c59b27;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3px;
+  background: #fbf8f0;
+  box-shadow: inset 0 0 0 2px #83161c;
+  transform: rotate(-6deg);
+}
+
+.pf-seal-stars {
+  font-size: 0.5rem;
+  color: #c59b27;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.pf-seal-text-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 0.58rem;
+  font-weight: 800;
+  color: #83161c;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.pf-seal-text-verified {
+  font-size: 0.48rem;
+  font-weight: 800;
+  color: #b48316;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pf-seal-text-wood {
+  font-size: 0.44rem;
+  color: #475569;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.pf-seal-caption {
+  font-size: 0.72rem;
+  color: #64748b;
+  max-width: 260px;
+  line-height: 1.3;
+}
+
+.pf-sign-box {
+  text-align: center;
+  min-width: 170px;
+}
+
+.pf-sig-rule {
+  width: 150px;
+  height: 1px;
+  background: #78716c;
+  margin: 0 auto 5px auto;
+}
+
+.pf-sig-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1e293b;
+  display: block;
+}
+
+.pf-sig-company {
+  font-size: 0.68rem;
+  color: #64748b;
+  display: block;
+}
+
+/* Modal Popup Preview */
+.pf-inv-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.pf-inv-modal[hidden] {
+  display: none !important;
+}
+
+.pf-inv-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 10, 10, 0.82);
+  backdrop-filter: blur(6px);
+}
+
+.pf-inv-modal-dialog {
+  position: relative;
+  z-index: 2;
+  background: #18181b;
+  border: 1px solid rgba(197, 155, 39, 0.3);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 860px;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.pf-inv-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #201a1a;
+  border-bottom: 1px solid rgba(197, 155, 39, 0.2);
+}
+
+.pf-inv-modal-title h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #f5f5f4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pf-inv-modal-subtitle {
+  font-size: 0.78rem;
+  color: #c59b27;
+}
+
+.pf-inv-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#pfInvDownloadBtn {
+  background: linear-gradient(135deg, #83161c 0%, #580c10 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid #c59b27 !important;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(131, 22, 28, 0.4);
+}
+
+#pfInvPrintBtn {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  font-weight: 600;
+}
+
+#pfInvPrintBtn:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  color: #ffd700 !important;
+  border-color: #ffd700 !important;
+}
+
+.pf-inv-modal-close {
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #a8a29e;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.pf-inv-modal-close:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.pf-inv-modal-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  flex: 1;
+  background: #272222;
+}
+
+/* Action Buttons */
+.btn-download-pdf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: linear-gradient(135deg, #83161c 0%, #580c10 100%) !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border: 1px solid #c59b27 !important;
+  box-shadow: 0 3px 10px rgba(131, 22, 28, 0.35);
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  font-size: 0.88rem;
+}
+
+.btn-download-pdf:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(131, 22, 28, 0.5);
+  filter: brightness(1.1);
+}
+
+.btn-view-invoice {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: #f8fafc !important;
+  color: #334155 !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  font-size: 0.88rem;
+}
+
+.btn-view-invoice:hover {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+.invoice-actions-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 640px) {
+  .pf-inv-header {
+    flex-direction: column;
+  }
+  .pf-inv-meta {
+    text-align: left;
+    width: 100%;
+  }
+  .pf-inv-meta-card {
+    text-align: left;
+  }
+  .pf-inv-meta-line {
+    justify-content: space-between;
+  }
+  .pf-inv-info-grid,
+  .pf-settlement-grid {
+    grid-template-columns: 1fr;
+  }
+  .pf-inv-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Print Optimizations */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .pf-invoice-card,
+  .pf-invoice-card * {
+    visibility: visible !important;
+  }
+
+  .pf-invoice-card {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 24px !important;
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .pf-inv-top-accent {
+    margin: -20px -24px 16px -24px !important;
+  }
+
+  .print-btn-bar, .pf-inv-modal-header, .pf-inv-modal-actions, .header, .footer, .floating-whatsapp-btn, .floating-cart-btn {
+    display: none !important;
+  }
+}
